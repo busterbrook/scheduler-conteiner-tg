@@ -18,7 +18,7 @@ async def send_message():
     print('Start ASYNC')
     try:
         async with TelegramClient('cont1', int(api_id), api_hash) as client:
-            await client.send_message(chat_id, '/pidor@SublimeBot')
+            await client.send_message(chat_id, '/tg-command')
         print("SEND MESSAGE")
     except Exception as ex:
         print(f"ERROR -> {ex}")
